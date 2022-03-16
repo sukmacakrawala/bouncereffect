@@ -1,0 +1,32 @@
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: antiquewhite;
+  margin: auto;
+  position: relative;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: brown;
+  border-radius: 20px;
+  bottom: 0;
+  left: 130px;
+  position: absolute;
+  animation-name: bouncer;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bouncer {
+  from {
+    margin-bottom: 0;
+  }
+
+  to {
+    margin-bottom: 100px;
+  }
+}
